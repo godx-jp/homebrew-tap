@@ -1,0 +1,3 @@
+{ "version": "1.0.0", "description": "ngrok-style tunnel CLI", "homepage": "https://s.godx.jp", "license": "MIT",
+  "architecture": { "64bit": { "url": "https://github.com/godx-jp/homebrew-tap/releases/download/v1.0.0/tun_windows_amd64.exe#/tun.exe", "hash": "6575863978e337b2152ec031373b57573cbbc611d44fb7ab0c36f4e766a44ae7" } },
+  "bin": "tun.exe" }
