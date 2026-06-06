@@ -1,24 +1,24 @@
 cask "tun" do
-  version "1.1.2"
+  version "1.2.0"
 
   on_macos do
     on_intel do
-      sha256 "f4ee5f7033fe4725446c0ea1aa941b4c0addff4ec62206068bca49a52b2fc920"
+      sha256 "3cbc1e0fdcf4acf573d98faffe72413e1644a7dcc8c6fe5d6cf4ca3f8589c42a"
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "0d3f7ba7346d6736b383ec9f661c180501e0626b242a3107bf21becc8be85aa3"
+      sha256 "ead9beb4a494233e3ba372c1bb1710ffd9da10a82910a924342fef81b27fdf42"
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "f23ded4c0bb8b8d379d24136c904b228613b39ed359d34597b939619f0e66e9b"
+      sha256 "b6a630de172d2bc244ebd1c06ed92bd30b25c6e40e8aa301a7457cc6a836b926"
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "20856cfd5029bc6877c8de96f46946f5b2adf516b3ea266045df2dde22b877c5"
+      sha256 "adb952b89cc59a36dc8578cc299f81008e45a1e25a1fc4d637d55eb2889856cb"
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_linux_arm64.tar.gz"
     end
   end
