@@ -1,3 +1,3 @@
-{ "version": "1.6.1", "description": "Self-hosted tunnel CLI", "homepage": "https://tun.godx.jp", "license": "MIT",
-  "architecture": { "64bit": { "url": "https://github.com/godx-jp/homebrew-tap/releases/download/v1.6.1/tun_windows_amd64.exe#/tun.exe", "hash": "f546b2d2ddf7fcb260b23a505f03c0de52ac322a1e7fffd01c94a8cddd487cd6" } },
+{ "version": "1.6.2", "description": "Self-hosted tunnel CLI", "homepage": "https://tun.godx.jp", "license": "MIT",
+  "architecture": { "64bit": { "url": "https://github.com/godx-jp/homebrew-tap/releases/download/v1.6.2/tun_windows_amd64.exe#/tun.exe", "hash": "1a3b2f72a2a7684a7e4322ef5c2ec34dcf70637f8e30143675b62f32c4bd1309" } },
   "bin": "tun.exe" }
