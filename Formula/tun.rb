@@ -1,28 +1,28 @@
 class Tun < Formula
   desc "Self-hosted tunnel CLI — forward local ports to *.tun.godx.jp"
   homepage "https://tun.godx.jp"
-  version "1.10.4"
+  version "2.0.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_darwin_arm64.tar.gz"
-      sha256 "4d4c6bf5de1f3e53694c72c782821cf4daed0bd77bf7ce8e1db1a1d8e56a93ef"
+      sha256 "d2da76bbd8b27ea1c00835649877c986f7ecb99de8bce157a91ea9e06191ffac"
     end
     on_intel do
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_darwin_amd64.tar.gz"
-      sha256 "d8fa1a8307eb5d71304c5d382a2a760a1b154316c047654b28011ee785b0d1af"
+      sha256 "7e616ccb7bc93afe184f2857ca094af745ecda494dc44aed207bc17fbae54939"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_linux_arm64.tar.gz"
-      sha256 "16886c2f7d61f259163162ac87035a350b37136f19620f572031fdf395c99bb1"
+      sha256 "aed46df29288e122c28f826f47b00d9f3522832b906a2691ffa8763f3273409f"
     end
     on_intel do
       url "https://github.com/godx-jp/homebrew-tap/releases/download/v#{version}/tun_#{version}_linux_amd64.tar.gz"
-      sha256 "c65b18b79e46260ae6efa22c0a714d4e5e89e628c441689036b41150d09dd609"
+      sha256 "a42d40a1eea229b8e7587524e50c0017d29a66497d8fdf383a6f2f30d49ce37f"
     end
   end
 
