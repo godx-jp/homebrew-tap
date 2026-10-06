@@ -1,27 +1,30 @@
 class Gx < Formula
-  desc "CLI hợp nhất của godx (auth / service / admin)"
+  desc "GoDX CLI: auth, context, service, admin and console lanes (godx-jp/id)"
   homepage "https://github.com/godx-jp/homebrew-tap"
-  version "0.9.2"
+  version "0.8.16"
+  # The 0.9.x formulae shipped the retired umbrella CLI; this gx is a different program whose own
+  # numbering is lower. version_scheme makes Homebrew treat 0.8.16 as newer than an installed 0.9.x.
+  version_scheme 1
 
   on_macos do
     on_arm do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.9.2/gx_v0.9.2_darwin_arm64.tar.gz"
-      sha256 "f556913e930cfef6ceb91bc84b2f3fcc085f9355b2302cb8ae916d61cb36cbe5"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.16/gx_v0.8.16_darwin_arm64.tar.gz"
+      sha256 "22d9765aacef3edfea6a937e3dda80c28f3d0213c6d7a40f1f62e3f539b93c71"
     end
     on_intel do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.9.2/gx_v0.9.2_darwin_amd64.tar.gz"
-      sha256 "744182efb5b447a80aac28fd3029e918cfe64a4d9bbf3c44e917e4de80b063ed"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.16/gx_v0.8.16_darwin_amd64.tar.gz"
+      sha256 "d300f110649359b76fe173056a05dd1e8a0a8be5d7208895d41e2e31dd534a83"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.9.2/gx_v0.9.2_linux_arm64.tar.gz"
-      sha256 "15120e5cf71cdfb3fd9074cdc15e12f8d3db8d04fb10d2b1914a85c98212dbbb"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.16/gx_v0.8.16_linux_arm64.tar.gz"
+      sha256 "feb72002b0d347ab5baa75ca4d557d86b2ce4b7bf0a97de48122276fa7e6dec9"
     end
     on_intel do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.9.2/gx_v0.9.2_linux_amd64.tar.gz"
-      sha256 "195d3b7bade37efc0e7a921fe4775ce829152d9e23e0fc8d58f9c7a8570244ba"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.16/gx_v0.8.16_linux_amd64.tar.gz"
+      sha256 "264589176401d7330b1f2c736ddf2bc21468a4286a2680cee5d2c7cc9457a9df"
     end
   end
 
@@ -30,6 +33,6 @@ class Gx < Formula
   end
 
   test do
-    assert_match "gx v0.9.2", shell_output("#{bin}/gx version")
+    assert_match "gx version 0.8.16", shell_output("#{bin}/gx --version")
   end
 end
