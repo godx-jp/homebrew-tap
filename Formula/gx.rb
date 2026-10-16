@@ -1,30 +1,30 @@
 class Gx < Formula
   desc "GoDX CLI: auth, context, service, admin and console lanes (godx-jp/id)"
   homepage "https://github.com/godx-jp/homebrew-tap"
-  version "0.8.23"
+  version "0.8.24"
   # The 0.9.x formulae shipped the retired umbrella CLI; this gx is a different program whose own
   # numbering is lower. version_scheme makes Homebrew treat 0.8.x as newer than an installed 0.9.x.
   version_scheme 1
 
   on_macos do
     on_arm do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.23/gx_v0.8.23_darwin_arm64.tar.gz"
-      sha256 "1efeb076e929533fcf6b03fae5f72c9fa79ba865211526dbeb0bd97c0b3465a1"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.24/gx_v0.8.24_darwin_arm64.tar.gz"
+      sha256 "f05a0b3076db3d59a5bb1e3d2b3df7b0e5e2490234bc638e3c9fd93e707a6f39"
     end
     on_intel do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.23/gx_v0.8.23_darwin_amd64.tar.gz"
-      sha256 "1abf0c792d7059ac615ee57537442469c24bcdc8b51a3d774bc672e0da8dec9e"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.24/gx_v0.8.24_darwin_amd64.tar.gz"
+      sha256 "ed370633deb3a8c5aa7be59d38ad2cc3c9d55d7dc238a90cb270307ee761e1f5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.23/gx_v0.8.23_linux_arm64.tar.gz"
-      sha256 "f85b18bf38458eb56430c3b4c8b5b89fbc87c6a15f7a5d15cead6e5ff7c645a3"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.24/gx_v0.8.24_linux_arm64.tar.gz"
+      sha256 "b45ee76ed73d2ce71a15a4a6d042e246f2a1d66347a123a8d83ab933d90ec38b"
     end
     on_intel do
-      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.23/gx_v0.8.23_linux_amd64.tar.gz"
-      sha256 "ea2ee7d36e161742619a61b5538ce3289e91c63b1db453ed415652a08aae62eb"
+      url "https://github.com/godx-jp/homebrew-tap/releases/download/gx-v0.8.24/gx_v0.8.24_linux_amd64.tar.gz"
+      sha256 "bac1052cf04c7de2fde4b4f8d35dc9c27aa528a3eef9d85946f8bf92a79e71f3"
     end
   end
 
@@ -33,6 +33,6 @@ class Gx < Formula
   end
 
   test do
-    assert_match "gx version 0.8.23", shell_output("#{bin}/gx --version")
+    assert_match "gx version 0.8.24", shell_output("#{bin}/gx --version")
   end
 end
